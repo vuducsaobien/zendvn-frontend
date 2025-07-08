@@ -1,0 +1,20 @@
+.div{
+    border: 1px solid black;
+    padding: 3px;
+
+
+    /* C1: => Chuyển đổi Block Element thành Inline Element */
+    /* float: left;  */
+    
+    /* C2: => Chuyển đổi Block Element thành Inline Element */
+    /* display: inline; */
+}
+
+.span{
+    border: 1px solid black;
+    padding: 3px;
+
+    /*  Chuyển đổi Inline Element thành Block Element */
+    display: block;
+
+}
