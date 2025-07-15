@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Example 05</title>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #main{
+                display: flex;
+            }
+
+            .left{
+                width: 200px; background-color: yellow;
+            }
+
+            .content{
+                width: 500px; background-color: red;
+            }
+
+            .right{
+                width: 300px; background-color: green;
+            }
+
+            .left, .content, .right{
+                height: 200px;
+            }
+        </style>
+
+        <!-- 
+            Giải thích cách hoạt động:
+                1. Container #main:
+                    - font-size: 0 - loại bỏ khoảng trắng giữa các inline-block elements
+                2. Các div con:
+                    - display: inline-block - làm cho chúng nằm cùng một dòng
+                    - font-size: 16px - khôi phục font-size cho nội dung bên trong
+            Cách này hoạt động như thế nào:
+                - Khi các element có display: inline-block, khoảng trắng trong HTML (như xuống dòng, tab) sẽ tạo ra khoảng cách nhỏ giữa chúng
+                - Bằng cách đặt font-size: 0 cho container, chúng ta loại bỏ những khoảng trắng này
+                - Sau đó khôi phục font-size: 16px cho các div con để nội dung vẫn hiển thị bình thường
+                => Bây giờ 3 div sẽ nằm sát nhau trên cùng một dòng mà không có khoảng trắng giữa chúng! 
+        -->
+
+        <div id="main">
+            <div class="left">Left</div>
+            <div class="content">Content</div>
+            <div class="right">Right</div>
+        </div>
+
+    </head>
+    <body>
+    </body>
+</html>
