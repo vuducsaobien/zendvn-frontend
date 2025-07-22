@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.clr{
+    clear: both;
+}
+
+.boxA{
+    background-color: red;
+    float: left;
+}
+
+.boxB{
+    background-color: blue;
+    float: left;
+}
+
+.boxC{
+    background-color: orange;
+    float: right;
+}
+
+.boxD{
+    background-color: green;
+    width: 100%;
+}

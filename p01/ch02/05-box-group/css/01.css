@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    width: 200px;
+    height: 150px;
+
+    /* Cách 1: */
+    /* display: flex; */
+    /* justify-content: center; Căn giữa ngang */
+    /* align-items: center;    Căn giữa dọc */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* Cách 2: */
+    text-align: center;
+    line-height: 150px;
+}
+
+.boxA{
+    background-color: red;
+    float: left;
+}
+
+.boxB{
+    background-color: blue;
+    display: inline-block;
+}
+
+.boxC{
+    background-color: orange;
+    float: right;
+}
+
+.boxD{
+    background-color: green;
+    width: 100%;
+}
