@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Example 04</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .clr{
+                clear: both;
+            }
+
+            #main{
+                width: 100%;
+                margin: 0 auto;
+                /* color: white; */
+                /* text-align: justify; */
+            }
+
+            /* 
+                Khi tính padding left & padding right 
+                thì nó sẽ thay đổi phần chiều rộng của thẻ html 
+                mà chúng ta đang thao tác  
+
+                => Chiều rộng khối 
+                Border-left + padding-left + width + padding-right + border-right
+
+                .left - width = 30% 
+                + .content-width = 40% 
+                + .right - width = 30% 
+                = 100%
+
+                cho padding-left = padding-right = 1% để chữ thụt vào trái phải so với khối left, content, right
+                => 
+                .left - width = 28%
+                + padding-left = 1%
+                + padding-right = 1%
+
+                + .content-width = 38% 
+                + padding-left = 1%
+                + padding-right = 1%
+
+                + .right - width = 28% 
+                + padding-left = 1%
+                + padding-right = 1%
+
+                = 100%
+            */
+
+            .left{
+                background-color: blue;
+                width: 28%;
+                float: left;
+                padding: 0 1%;
+            }
+
+            .content{
+                background-color: cyan;
+                width: 38%;
+                float: left;
+                padding: 0 1%;
+            }
+
+            .right{
+                background-color: blue;
+                width: 28%;
+                float: right;
+                padding: 0 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="left">
+                The US government had been funding doctors, midwives, and nurses at the Nangarhar Regional Hospital, where Mohammad died. It also donated medicines and medical equipment, the Nangarhar Public Health Ministry told CNN. All of that was suspended earlier this year.
+            </div>
+            <div class="content">
+                The US government had been funding doctors, midwives, and nurses at the Nangarhar Regional Hospital, where Mohammad died. It also donated medicines and medical equipment, the Nangarhar Public Health Ministry told CNN. All of that was suspended earlier this year.
+            </div>
+            <div class="right">
+                The US government had been funding doctors, midwives, and nurses at the Nangarhar Regional Hospital, where Mohammad died. It also donated medicines and medical equipment, the Nangarhar Public Health Ministry told CNN. All of that was suspended earlier this year.
+            </div>
+        </div>
+    </body>
+</html>

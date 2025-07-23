@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Example 07</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .clr{
+                clear: both;
+            }
+            /* Website thì left & right cố định, còn content thì tự động */
+
+            #main{
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+            .left{
+                background-color: blue;
+                width: 290px;
+                float: left;
+                padding: 0 5px;
+            }
+
+            .content{
+                background-color: cyan;
+                /* width: 380px; */
+                float: left;
+                padding: 0 5px;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+
+            .right{
+                background-color: blue;
+                width: 290px;
+                float: right;
+                /* float: left; */
+                padding: 0 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="left">
+                LEFT - The US government had been funding doctors, midwives, and nurses at the Nangarhar Regional Hospital, where Mohammad died. It also donated medicines and medical equipment, the Nangarhar Public Health Ministry told CNN. All of that was suspended earlier this year.
+            </div>
+            <div class="right">
+                RIGHT - The US government had been funding doctors, midwives, and nurses at the Nangarhar Regional Hospital, where Mohammad died. It also donated medicines and medical equipment, the Nangarhar Public Health Ministry told CNN. All of that was suspended earlier this year.
+            </div>
+            <div class="content">
+                CONTENT - The US government had been funding doctors, midwives, and nurses at the Nangarhar Regional Hospital, where Mohammad died. It also donated medicines and medical equipment, the Nangarhar Public Health Ministry told CNN. All of that was suspended earlier this year.
+            </div>
+        </div>
+    </body>
+</html>
